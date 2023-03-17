@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+         
+        html {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            background: url(20220406-IMG_4475.jpg) no-repeat 0px 0px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            -moz-background-size: 100% 100%;
+        }
+         
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+         
+       #yuyue {
+            width: 290px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 330px;
+            background-color: rgba(75, 81, 95, 0.3);
+            border-radius: 5px;
+        }
+        
+        p {
+            margin-top: 30px;
+            margin-left: 15px;
+            color: white;
+        }
+         
+        input[type="radio"]{
+            padding-left: 20px;
+        }
+
+        input[type="button"] {
+            margin-left: 14px;
+            border-radius: 5px;
+            border-style: hidden;
+            height: 30px;
+            width: 90px;
+            background-color: rgba(2, 189, 145, 0.5);
+            outline: none;
+            color: white;
+            padding-left: 2px;
+        }        
+    </style>
+    
+    <style type="text/css">
+        input::-ms-input-placeholder{text-align: center;}
+        input::-webkit-input-placeholder{text-align: center;}
+    </style>
+
+</head>
+<body>
+        <div id="yuyue">
+        <form action="" id="form">
+            <h1 style="text-align: center;color: white;">预约</h1>
+            <p>类型：
+                    <input type="radio" name="choice" value="0" checked>咽拭子
+                    <input type="radio" name="choice" value="1">鼻拭子
+                
+            </p>
+            <p>时间：
+                        
+                    <select size="1" name="year">
+                    <option value="" selected>...</optin>
+                    <option value="2022">2022年</option>
+                    </select>
+                    <select size="1" name="month">
+                    <option value="" selected>...</optin>
+                    <option value="1月">1月</option>
+                    <option value="2月">2月</option>
+                    <option value="3月">3月</option>
+                     <option value="4月">4月</option>
+                    <option value="5月">5月</option>
+                    <option value="6月">6月</option>
+                    <option value="7月">7月</option>
+                    <option value="8月">8月</option>
+                    <option value="9月">9月</option>
+                    <option value="10月">10月</option>
+                    <option value="11月">11月</option>
+                    <option value="12月">12月</option>
+                    </select>
+                    <select size="1" name="data">
+                    <option value="" selected>...</optin>
+                    <option value="1日">1日</option>
+                    <option value="2日">2日</option>
+                    <option value="3日">3日</option>
+                    <option value="4日">4日</option>
+                    <option value="5日">5日</option>
+                    <option value="6日">6日</option>
+                    <option value="7日">7日</option>
+                    <option value="8日">8日</option>
+                    <option value="9日">9日</option>
+                    <option value="10日">10日</option>
+                    <option value="11日">11日</option>
+                    <option value="12日">12日</option>
+                    <option value="13日">13日</option>
+                    <option value="14日">14日</option>
+                    <option value="15日">15日</option>
+                    <option value="16日">16日</option>
+                    <option value="17日">17日</option>
+                    <option value="18日">18日</option>
+                    <option value="19日">19日</option>
+                    <option value="20日">20日</option>
+                    <option value="21日">21日</option>
+                    <option value="22日">22日</option>
+                    <option value="23日">23日</option>
+                    <option value="24日">24日</option>
+                    <option value="25日">25日</option>
+                    <option value="26日">26日</option>
+                    <option value="27日">27日</option>
+                    <option value="28日">28日</option>
+                    <option value="29日">29日</option>
+                    <option value="30日">30日</option>
+                    <option value="31日">31日</option>
+                    </select>
+            </p>
+             <p>住址：<input id="address" type="text"></p>
+            <div style="text-align: center;margin-top: 30px;">
+                <input type="button" class="button" value="返回" onclick="return_click()">
+                <input type="button" class="button" value="确定" onclick="sure_click()">
+            </div>
+        </form>
+        <script>
+ 
+            function sure_click(){
+                window.location.href="预约成功.html";
+            }
+            function return_click(){
+                window.location.href="需求.html";
+            }
+            
+        </script>
+    </div>
+ 
+</body>
+</html>

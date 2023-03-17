@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+         
+        html {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            background: url(20220406-IMG_4475.jpg) no-repeat 0px 0px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            -moz-background-size: 100% 100%;
+        }
+         
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+         
+       #yuyue {
+            width: 290px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 330px;
+            background-color: rgba(75, 81, 95, 0.3);
+            border-radius: 5px;
+        }
+        
+        p {
+            margin-top: 20px;
+            margin-left: 15px;
+            color: white;
+        }
+         
+        input[type="radio"]{
+            padding-left: 20px;
+        }
+
+        input[type="button"] {
+            margin-left: 14px;
+            border-radius: 5px;
+            border-style: hidden;
+            height: 30px;
+            width: 90px;
+            background-color: rgba(2, 189, 145, 0.5);
+            outline: none;
+            color: white;
+            padding-left: 2px;
+        }        
+    </style>
+    
+    <style type="text/css">
+        input::-ms-input-placeholder{text-align: center;}
+        input::-webkit-input-placeholder{text-align: center;}
+    </style>
+
+</head>
+<body>
+        <div id="yuyue">
+        <form action="" id="form">
+            <h1 style="text-align: center;color: white;">信息修改</h1>
+            <p>姓名：<input id="name" type="text"></p>
+            <p>身份证号：<input id="ident" type="text"></p>
+            <p>登录密码：<input id="password" type="text"></p>
+            <p>联系电话：<input id="number" type="text"></p>
+            <div style="text-align: center;margin-top: 30px;">
+                <input type="button" class="button" value="返回" onclick="return_click()">
+                <input type="button" class="button" value="确定" onclick="sure_click()">
+            </div>
+        </form>
+        <script>
+ 
+            function sure_click(){
+                window.location.href="需求.html";
+            }
+            function return_click(){
+                window.location.href="需求.html";
+            }
+            
+        </script>
+    </div>
+ 
+</body>
+</html>
